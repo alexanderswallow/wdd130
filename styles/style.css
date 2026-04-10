@@ -1,0 +1,374 @@
+/* WDD 130 Portal — Alex Swallow
+   Palette: deep navy, warm amber, slate, off-white
+   Fonts: Oswald (headings), Source Serif 4 (display), Open Sans (body)
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 18px;
+    background-color: #F4F1EC;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+/* ── HEADER ── */
+header {
+    background-color: #1A2744;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 0 2rem;
+    min-height: 72px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+}
+
+.site-title {
+    font-family: 'Oswald', Arial Narrow, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: #F4F1EC;
+    text-transform: uppercase;
+}
+
+/* ── NAV ── */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0;
+}
+
+nav a {
+    font-family: 'Oswald', Arial Narrow, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #C8B89A;
+    padding: 1.5rem 1.25rem;
+    display: inline-block;
+    transition: background-color 0.2s, color 0.2s;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+    background-color: #D4862A;
+    color: #fff;
+    border-bottom-color: #D4862A;
+}
+
+/* ── MAIN ── */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem 4rem;
+}
+
+/* ── HERO ── */
+.hero {
+    background-color: #1A2744;
+    color: #F4F1EC;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    margin: 0 -1.5rem 3rem;
+}
+
+.hero h1 {
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #F4F1EC;
+    margin-bottom: 1rem;
+    line-height: 1.15;
+}
+
+.hero-sub {
+    font-size: 1.1rem;
+    color: #C8B89A;
+    max-width: 580px;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #D4862A;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #b86e1c;
+}
+
+/* ── SECTIONS ── */
+section {
+    margin-bottom: 3.5rem;
+}
+
+h2 {
+    font-family: 'Oswald', Arial Narrow, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1A2744;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #D4862A;
+}
+
+h3 {
+    font-family: 'Oswald', Arial Narrow, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1A2744;
+    margin-bottom: 0.5rem;
+}
+
+h4, h5, h6 {
+    font-family: 'Oswald', Arial Narrow, sans-serif;
+    color: #D4862A;
+    margin: 1rem 0 0.5rem;
+    letter-spacing: 0.05em;
+}
+
+h4 { font-size: 1rem; text-transform: uppercase; }
+h5 { font-size: 0.95rem; text-transform: uppercase; }
+h6 { font-size: 0.85rem; text-transform: uppercase; }
+
+p {
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #333;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+}
+
+a {
+    color: #D4862A;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ── CARDS ── */
+.card-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: 4px solid #D4862A;
+    padding: 1.5rem;
+    border-radius: 3px;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+/* ── TABLE ── */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    background: #fff;
+}
+
+thead {
+    background-color: #1A2744;
+    color: #F4F1EC;
+}
+
+th {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f5ef;
+}
+
+/* ── LIST ── */
+ul {
+    padding-left: 1.5rem;
+    margin-top: 0.75rem;
+}
+
+ul li {
+    line-height: 1.75;
+    margin-bottom: 0.4rem;
+    color: #333;
+}
+
+/* ── FORM ── */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+}
+
+/* email, subject, message, button span full width */
+.form-group:nth-child(3),
+.form-group:nth-child(4),
+.form-group:nth-child(5),
+form button {
+    grid-column: 1 / -1;
+}
+
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1A2744;
+}
+
+input,
+select,
+textarea {
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: #fafafa;
+    color: #222;
+    outline: none;
+    transition: border-color 0.2s;
+    width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1A2744;
+    background: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+}
+
+form button {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background-color: #D4862A;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    justify-self: start;
+}
+
+form button:hover {
+    background-color: #b86e1c;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #1A2744;
+    color: #C8B89A;
+    text-align: center;
+    padding: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        gap: 0.75rem;
+    }
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    nav a {
+        padding: 0.75rem 0.9rem;
+    }
+    .card-row {
+        grid-template-columns: 1fr;
+    }
+    form {
+        grid-template-columns: 1fr;
+    }
+    .form-group:nth-child(3),
+    .form-group:nth-child(4),
+    .form-group:nth-child(5),
+    form button {
+        grid-column: 1;
+    }
+    .hero h1 {
+        font-size: 2rem;
+    }
+}

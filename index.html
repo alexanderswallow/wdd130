@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Swallow | WDD130 | Home</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.png" alt="Alex Swallow Logo" class="logo">
+            <span class="site-title">Alex Swallow</span>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="ice.html">ICE</a>
+            <a href="about.html">About Me</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>WDD 130 &mdash; Web Fundamentals</h1>
+            <p class="hero-sub">A collection of web development work built at BYU&ndash;Idaho. Designed from scratch, coded by hand, published for the world.</p>
+            <a href="about.html" class="btn">Learn More About Me</a>
+        </section>
+
+        <section class="intro">
+            <h2>Welcome to My Portal</h2>
+            <p>This site serves as the home base for all my WDD 130 projects. Here you will find links to my White Water Rafting website, my ICE challenge exercises, and a page about me. Each project represents something new I learned about HTML, CSS, design, and the web.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula libero nec felis tincidunt, in cursus arcu sodales. Sed gravida nisl at turpis malesuada, vel dictum enim lacinia. Fusce convallis, dui non pretium fermentum, augue odio fermentum velit, non dictum tortor lorem id augue.</p>
+        </section>
+
+        <section class="projects">
+            <h2>My Projects</h2>
+            <div class="card-row">
+                <div class="card">
+                    <h3>White Water Rafting</h3>
+                    <p>A full multi-page website for a fictional rafting company called Dry Oar Boating. Built with semantic HTML and CSS Grid.</p>
+                    <a href="wwr/index.html">Visit Site &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>ICE Challenges</h3>
+                    <p>A log of every in-class exercise completed throughout the semester, with descriptions and links to each page.</p>
+                    <a href="ice.html">View Challenges &rarr;</a>
+                </div>
+                <div class="card">
+                    <h3>About Me</h3>
+                    <p>A personal page with background information, interests, and goals for this course and beyond.</p>
+                    <a href="about.html">Read More &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <h2>Skills Learned This Semester</h2>
+            <h4>Front-End Technologies</h4>
+            <p>The following table shows the main skills covered in WDD 130 and my current comfort level with each.</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 Structure</td>
+                        <td>Markup</td>
+                        <td>Learning</td>
+                        <td>Semantic elements, accessibility</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Styling</td>
+                        <td>Presentation</td>
+                        <td>Learning</td>
+                        <td>Selectors, box model, colors</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Grid</td>
+                        <td>Layout</td>
+                        <td>Learning</td>
+                        <td>Grid lines, template columns</td>
+                    </tr>
+                    <tr>
+                        <td>Flexbox</td>
+                        <td>Layout</td>
+                        <td>Learning</td>
+                        <td>Navigation and footer layouts</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub Pages</td>
+                        <td>Deployment</td>
+                        <td>Solid</td>
+                        <td>Push and publish workflow</td>
+                    </tr>
+                    <tr>
+                        <td>Responsive Design</td>
+                        <td>Layout</td>
+                        <td>Learning</td>
+                        <td>Media queries, mobile-first</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="goals">
+            <h2>Goals &amp; Interests</h2>
+            <h5>What I Hope to Accomplish</h5>
+            <ul>
+                <li>Build a portfolio-quality portal page for WDD 130</li>
+                <li>Understand HTML and CSS deeply, not just copy and paste</li>
+                <li>Complete all ICE challenges on time</li>
+                <li>Develop a consistent visual design across all pages</li>
+                <li>Learn to use version control with Git and GitHub</li>
+                <li>Apply web skills to future tech and automotive career interests</li>
+            </ul>
+        </section>
+
+        <section class="contact">
+            <h2>Get In Touch</h2>
+            <h6>Send Me a Message</h6>
+            <p>Have a question or want to connect? Fill out the form below.</p>
+            <form action="#" method="get">
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="fname" placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lname" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <select id="subject" name="subject">
+                        <option value="">Select a subject...</option>
+                        <option value="general">General Question</option>
+                        <option value="project">Project Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2026 Alex Swallow
+    </footer>
+
+</body>
+</html>
